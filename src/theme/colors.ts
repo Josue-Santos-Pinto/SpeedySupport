@@ -7,10 +7,15 @@ export const colors = {
   greenPrimary: '#0ECD9D',
   greenDark: '#0A906E',
 
-  darkPrimary: '#363636',
+  darkPrimary: '#1f1f1f',
+  darkSecundary: '#363636',
 
   textPrimary: '#EEE',
   textSecondary: '#A7A6A6',
+
+  redCard: '#B21613',
+  greenCard: '#0A906E',
+  orangeCard: '#FF6600',
 
   black: '#0B0B0B',
   white: '#F0F2F3',

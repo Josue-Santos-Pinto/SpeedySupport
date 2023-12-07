@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { createBox, createText } from '@shopify/restyle';
+import { createBox, createText, useTheme } from '@shopify/restyle';
 import { Theme } from '../../theme';
 import { RequestCardType } from '../../models/RequestCardType';
 
@@ -11,22 +11,24 @@ type Props = {
 };
 
 export default function RequestCard({ data }: Props) {
+  const theme = useTheme<Theme>();
+
   const [color, setColor] = useState<string>('');
 
   const getColor = () => {
     switch (data.urgency) {
       case 0:
-        setColor('#0A906E');
+        setColor(theme.colors.greenCard);
         break;
       case 1:
-        setColor('#FF6600');
+        setColor(theme.colors.orangeCard);
         break;
       case 2:
-        setColor('#B21613');
+        setColor(theme.colors.redCard);
         break;
 
       default:
-        setColor('#0A906E');
+        setColor(theme.colors.greenCard);
     }
   };
 
@@ -47,7 +49,7 @@ export default function RequestCard({ data }: Props) {
       <Text variant="title" mb="s">
         {data.title}
       </Text>
-      <Box width="100%" height={2} bg="darkPrimary" />
+      <Box width="100%" height={2} bg="darkSecundary" />
 
       <Box>
         <Box flexDirection="row" my="s" justifyContent="space-between" width="80%">
