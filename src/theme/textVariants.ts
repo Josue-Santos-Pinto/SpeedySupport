@@ -9,4 +9,13 @@ export const textVariants = {
     fontSize: 14,
     fontWeight: 'bold',
   },
+  label: {
+    fontSize: 18,
+    color: 'white',
+  },
+  button: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'black',
+  },
 };

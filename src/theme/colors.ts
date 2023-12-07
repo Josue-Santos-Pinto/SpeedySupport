@@ -17,6 +17,8 @@ export const colors = {
   greenCard: '#0A906E',
   orangeCard: '#FF6600',
 
+  bgButton: '#35b7ff',
+
   black: '#0B0B0B',
   white: '#F0F2F3',
 };

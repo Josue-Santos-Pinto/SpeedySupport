@@ -10,7 +10,7 @@ const Text = createText<Theme>();
 export default function Home() {
   return (
     <Box flex={1} bg="darkSecundary" px="l">
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <RequestCard
           data={{
             id: '1',
