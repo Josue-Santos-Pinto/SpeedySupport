@@ -5,4 +5,8 @@ export const textVariants = {
   title: {
     fontSize: 24,
   },
+  bodyCard: {
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
 };
